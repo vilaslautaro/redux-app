@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import setUserList from "./reducers.users";
 
 export const userSlice = createSlice({
   name: "users",
@@ -6,9 +7,7 @@ export const userSlice = createSlice({
     list: [],
   },
   reducers: {
-    setUserList: (state, action) => {
-      state.list = action.payload;
-    },
+    setUserList
   },
 });
 
